@@ -31,9 +31,19 @@ int* doubleCapacity(const int* list, int size)
 
 // Function for 11.5
 
-int* SmallestElement (const int* field, int number)
+int SmallestElement (int* field, int number)
 {
-    //check which element is smallest
+    int smallest;
+     smallest = field[0];
+    for (int j = 0; j< number; j++)
+    {
+        
+        if (field[j] < smallest)
+            smallest = field[j];
+        
+    }
+    return smallest;
+    
 }
 
 int main()
@@ -104,16 +114,16 @@ int main()
     cout << "Please enter the size of the array: ";
     
     cin >> number;
-    for (int i=0; i < number; i++)
+    for (int b=0; b < number; b++)
         
     {
         cout << "Enter value: ";
-        cin >> array[i];
+        cin >> array[b];
     }
     
     
+    cout << SmallestElement(field, number)<< endl;
     
-
     
     return 0;
 }
