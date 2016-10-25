@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6D4CA8311DB9758D00AB8E60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CA8301DB9758D00AB8E60 /* main.cpp */; };
 		6D4CA8391DBEF52700AB8E60 /* Rectangle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */; };
+		6D4CA83C1DBF23DD00AB8E60 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CA83A1DBF23DD00AB8E60 /* Course.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		6D4CA8301DB9758D00AB8E60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle2D.cpp; sourceTree = "<group>"; };
 		6D4CA8381DBEF52700AB8E60 /* Rectangle2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rectangle2D.hpp; sourceTree = "<group>"; };
+		6D4CA83A1DBF23DD00AB8E60 /* Course.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
+		6D4CA83B1DBF23DD00AB8E60 /* Course.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Course.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				6D4CA8301DB9758D00AB8E60 /* main.cpp */,
-				6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */,
 				6D4CA8381DBEF52700AB8E60 /* Rectangle2D.hpp */,
+				6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */,
+				6D4CA83B1DBF23DD00AB8E60 /* Course.hpp */,
+				6D4CA83A1DBF23DD00AB8E60 /* Course.cpp */,
 			);
 			path = "CS 172 HW 4 new";
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			files = (
 				6D4CA8311DB9758D00AB8E60 /* main.cpp in Sources */,
 				6D4CA8391DBEF52700AB8E60 /* Rectangle2D.cpp in Sources */,
+				6D4CA83C1DBF23DD00AB8E60 /* Course.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

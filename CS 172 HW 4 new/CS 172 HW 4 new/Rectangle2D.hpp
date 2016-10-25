@@ -37,9 +37,9 @@ public:
     
     double getArea();
     double getPerimeter();
-    double contains(double x, double y);
-    double contains(const Rectangle2D &r);
-    double overlaps(const Rectangle2D &r);
+    bool contains(double x, double y);
+    bool contains(const Rectangle2D &r);
+    bool overlaps(const Rectangle2D &r);
     
     
 };

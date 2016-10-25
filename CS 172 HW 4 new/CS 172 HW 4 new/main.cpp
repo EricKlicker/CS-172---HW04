@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Rectangle2D.hpp"
+#include "Course.hpp"
 using namespace std;
 
 
@@ -130,11 +131,28 @@ int main()
     
     //11.9 Rectangle2D class
 
-    Rectangle2D r1(2,2,5.5,4.9);
-    Rectangle2D r2(4,5,10.5,3.2);
-    Rectangle2D r3(3,5,2.3,5.4);
-    r1.setX(40);
-    r1.getX();
+   // Rectangle2D r1(2,2,5.5,4.9);
+    //Rectangle2D r2(4,5,10.5,3.2);
+   // Rectangle2D r3(3,5,2.3,5.4);
+    
+   // r1.getArea();
+   // r1.contains(r2);
+    
+    //11.13
+    
+    Course s1("Lifting", 20);
+    
+    s1.addStudent("Eric");
+    s1.addStudent("Steven");
+    s1.addStudent("Micah");
+    
+    for (int i =0; i < s1. getNumberOfStudents(); i++)
+        cout << *(s1.getStudents()+i) << endl;
+    
+    s1. dropStudent("Eric");
+    
+    for (int i = 0; i < s1.getNumberOfStudents(); i++)
+        cout << *(s1.getStudents() +i) << endl;
     
     
     

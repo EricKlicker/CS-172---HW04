@@ -97,17 +97,59 @@ double Rectangle2D:: getPerimeter()
     return perimeter;
 }
 
-double Rectangle2D:: contains(double x, double y)
+bool Rectangle2D:: contains(double x, double y)
 {
+    int xmax;
+    int xmin;
+    int ymax;
+    int ymin;
     
+    xmax = x + (width / 2);
+    xmin = x - (width / 2);
+    ymax = y + (height / 2);
+    ymin = y - (height /2);
+    
+    if ( x < xmax && x > xmin && y < ymax && y > ymin)
+
+       return true;
+    else
+        return false;
 }
 
-double Rectangle2D:: contains(const Rectangle2D &r)
+bool Rectangle2D:: contains(const Rectangle2D &r)
 {
+    int xmax;
+    int xmin;
+    int ymax;
+    int ymin;
     
+    xmax = x + (width / 2);
+    xmin = x - (width / 2);
+    ymax = y + (height / 2);
+    ymin = y - (height / 2);
+    
+    if (r.x < xmax && r.x > xmin && r.y < ymax && r.y > ymin)
+    
+    return true;
+    else
+        return false;
 }
+/*
+bool Rectangle2D:: overlaps(const Rectangle2D &r)
+{
+    int xmax;
+    int xmin;
+    int ymax;
+    int ymin;
+    
+    xmax = x + (width / 2);
+    xmin = x - (width / 2);
+    ymax = y + (height / 2);
+    ymin = y - (height /2);
+    
+    
+if ( r.x < xmax || r.x 
+        return true;
 
-double Rectangle2D:: overlaps(const Rectangle2D &r)
-{
-    
 }
+ */
