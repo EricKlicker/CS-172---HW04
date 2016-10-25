@@ -35,8 +35,8 @@ public:
     void SetHeight(int newheight);
      double GetHeight();
     
-    double getArea();
-    double getPerimeter();
+    double getArea(double newwidth, double newheight);
+    double getPerimeter(double newwidth, double newheight);
     bool contains(double x, double y);
     bool contains(const Rectangle2D &r);
     bool overlaps(const Rectangle2D &r);

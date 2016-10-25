@@ -82,7 +82,7 @@ double Rectangle2D:: GetHeight()
 }
 
 
-double Rectangle2D:: getArea()
+double Rectangle2D:: getArea(double newwidth, double newheight)
 {
     int area;
     area = x * y;
@@ -90,7 +90,7 @@ double Rectangle2D:: getArea()
     return area;
 }
 
-double Rectangle2D:: getPerimeter()
+double Rectangle2D:: getPerimeter(double newwidth, double newheight)
 {
     int perimeter;
     perimeter = (2 * x)+ (2 * y);
@@ -134,7 +134,7 @@ bool Rectangle2D:: contains(const Rectangle2D &r)
     else
         return false;
 }
-/*
+
 bool Rectangle2D:: overlaps(const Rectangle2D &r)
 {
     int xmax;
@@ -148,8 +148,12 @@ bool Rectangle2D:: overlaps(const Rectangle2D &r)
     ymin = y - (height /2);
     
     
-if ( r.x < xmax || r.x 
-        return true;
+if ( xmax <= r.x && xmin >= r.x && ymax <= r.y && ymin >= r.y)
+    return false;
 
+    if ((xmax < r.x ||xmin > r.x) && (ymax < r.y || ymin > r.y))
+        return true;
+    else
+        return false;
 }
- */
+ 
