@@ -21,15 +21,25 @@ private:
     
 public:
     Rectangle2D();
-    void getX();
-    void getY();
-    void setX();
-    void setY();
-    void getArea();
-    void getPerimeter();
-    void contains(double x, double y);
-    void contains(const Rectangle2D &r);
-    void overlaps(const Rectangle2D &r);
+  Rectangle2D( double X, double Y , double w, double h);
+    void setX(int newx);
+    double getX();
+    
+    void setY(int newy);
+    double getY();
+    
+    
+    void SetWidth(int newwidth);
+    double GetWidth();
+    
+    void SetHeight(int newheight);
+     double GetHeight();
+    
+    double getArea();
+    double getPerimeter();
+    double contains(double x, double y);
+    double contains(const Rectangle2D &r);
+    double overlaps(const Rectangle2D &r);
     
     
 };

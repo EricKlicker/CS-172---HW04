@@ -127,5 +127,16 @@ int main()
     cout << "The smallest element in the array is: " << SmallestElement(field, number)<< endl;
     
     
+    
+    //11.9 Rectangle2D class
+
+    Rectangle2D r1(2,2,5.5,4.9);
+    Rectangle2D r2(4,5,10.5,3.2);
+    Rectangle2D r3(3,5,2.3,5.4);
+    r1.setX(40);
+    r1.getX();
+    
+    
+    
     return 0;
 }
