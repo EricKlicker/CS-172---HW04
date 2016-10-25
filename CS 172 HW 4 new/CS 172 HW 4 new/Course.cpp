@@ -10,6 +10,7 @@
 #include <iostream>
 using namespace std;
 
+//create funciton to be able to create a course
 Course::Course(const string& courseName, int capacity)
 {
     numberOfStudents = 0;
@@ -25,21 +26,22 @@ Course::~Course()
 }
 
 
-
+//get a course name
 string Course:: getCourseName() const
 {
     return courseName;
 }
-
+//create a function to be able to add a student
 void Course::addStudent(const string& name)
 {
     students[numberOfStudents] = name;
     numberOfStudents++;
 }
 
+//create a function in which we can drop a student
 void Course::dropStudent(const string& name)
 {
-    for(int i =0; i < capacity; i++)
+    for(int i =0; i < capacity; i++)            //make a for loop that deletes a student, then decrements the slots where the students used to be
         if(*(getStudents()+i)==name)
         {
            *(students+i) = "";

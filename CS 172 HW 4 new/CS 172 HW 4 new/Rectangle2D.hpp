@@ -11,17 +11,18 @@
 
 #include <stdio.h>
 
+                            //create a class for a 2D rectangle
 class Rectangle2D
 {
-private:
+private:                    //private variables
     double x;
     double y;
     double width;
     double height;
     
-public:
+public:                                                     //public functions
     Rectangle2D();
-  Rectangle2D( double X, double Y , double w, double h);
+  Rectangle2D( double X, double Y , double w, double h); // some void, some return values
     void setX(int newx);
     double getX();
     
@@ -38,7 +39,7 @@ public:
     double getArea(double newwidth, double newheight);
     double getPerimeter(double newwidth, double newheight);
     bool contains(double x, double y);
-    bool contains(const Rectangle2D &r);
+    bool contains(const Rectangle2D &r);  //use a rectangle in the parameter
     bool overlaps(const Rectangle2D &r);
     
     

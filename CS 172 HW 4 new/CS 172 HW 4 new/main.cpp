@@ -35,7 +35,7 @@ int* doubleCapacity(const int* list, int size)
 
 // Function for 11.5
 
-int SmallestElement (int* field, int number)        //create a function to find the smallest
+int SmallestElement (int* field, int number)        //create a function to find the smallest element in array
 {
     int smallest;
     
@@ -78,10 +78,10 @@ int main()
         total += array[k];
         
     }
-    double average = (total/size);
+    double average = (total/size);                  //calculate average of that array and the inputs
     cout << "The average is: " << average << endl;
     
-    int above = 0;
+    int above = 0;                                  //determine if there are any arrays above the average
     for (int a = 0; a < size; a++)
     {
         if (array[a] > average)
@@ -91,7 +91,7 @@ int main()
     
         cout << endl;
     
-    delete[] array;
+    delete[] array;                         //always delete array after finished
 
     
     //11.3
@@ -101,9 +101,9 @@ int main()
         list[i]=i+1;
     }
     
-    list = doubleCapacity(list, 3);
+    list = doubleCapacity(list, 3);     //call the funciton to double capacity of an array of 3
     
-    for (int i=0; i<6;i++) {
+    for (int i=0; i<6;i++) {                // output the values in the array
         cout << list[i];
     }
     cout << endl;
@@ -114,22 +114,23 @@ int main()
     
     //11.5
     
-    int number = 0;
+    int number = 0;                                     //create an array
     int* field = new int[number];
     
-    cout << "Please enter the size of the array: ";
+    cout << "Please enter the size of the array: "; //let the user enter the size of the array
     
     cin >> number;
     for (int b=0; b < number; b++)
         
     {
-        cout << "Enter value: ";
+        cout << "Enter value: ";                    // let the user enter the value of each part of the array
         cin >> array[b];
     }
     
     
     cout << "The smallest element in the array is: " << SmallestElement(field, number)<< endl;
     
+    //call the function that determines the smallest element of the array
     
     
     //11.9 Rectangle2D class
@@ -165,20 +166,20 @@ int main()
     
     //11.13
     
-    Course s1("Lifting", 20);
+    Course s1("Math", 20); // use function and create course with 20 slots
     
-    s1.addStudent("Eric");
+    s1.addStudent("Eric");          //create several students in the course
     s1.addStudent("Steven");
     s1.addStudent("Micah");
     
-    for (int i =0; i < s1. getNumberOfStudents(); i++)
+    for (int i =0; i < s1. getNumberOfStudents(); i++) //output these students
         cout << *(s1.getStudents()+i) << endl;
     
-    s1. dropStudent("Eric");
+    s1. dropStudent("Eric"); //implement the drop function
     
     
     for (int i =0; i < s1. getNumberOfStudents(); i++)
-        cout << *(s1.getStudents()+i) << endl;
+        cout << *(s1.getStudents()+i) << endl;          //output the students exlcuding those who have been dropped
 
     
     

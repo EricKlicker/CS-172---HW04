@@ -22,6 +22,8 @@ Rectangle2D::Rectangle2D()
     
 }
 
+//create functions that we can later call in main
+
 Rectangle2D::Rectangle2D (double X, double Y, double w, double h)
 {
     x = X;
@@ -30,20 +32,20 @@ Rectangle2D::Rectangle2D (double X, double Y, double w, double h)
     height = h;
     
 }
-
+//get value of x
 double Rectangle2D::getX()
 {
     
     return x;
     
 }
-
+//get value of y
 double Rectangle2D::getY()
 {
     
     return y;
 }
-
+//set a new value of x
 void Rectangle2D:: setX(int newx)
 {
     
@@ -51,37 +53,38 @@ void Rectangle2D:: setX(int newx)
     
     
 }
+//set a new value of y
 void Rectangle2D:: setY(int newy)
 {
     
     y = newy;
 }
 
-
+//set new width
 void Rectangle2D:: SetWidth(int newwidth)
 {
     width = newwidth;
 }
 
-
+//get a value for width
 double Rectangle2D:: GetWidth()
 {
     return width;
 }
 
-
+//set a new value for height
 void Rectangle2D:: SetHeight(int newheight)
 {
     height = newheight;
     
 }
-
+//return new value of height
 double Rectangle2D:: GetHeight()
 {
     return height;
 }
 
-
+//get area for rectangle based on new width and new height as parameters
 double Rectangle2D:: getArea(double newwidth, double newheight)
 {
     int area;
@@ -89,14 +92,14 @@ double Rectangle2D:: getArea(double newwidth, double newheight)
     
     return area;
 }
-
+//get perimeter based on new width and new height as parameters
 double Rectangle2D:: getPerimeter(double newwidth, double newheight)
 {
     int perimeter;
     perimeter = (2 * x)+ (2 * y);
     return perimeter;
 }
-
+//use bool operator to check if point x, y is within the rectangle
 bool Rectangle2D:: contains(double x, double y)
 {
     int xmax;
@@ -115,7 +118,7 @@ bool Rectangle2D:: contains(double x, double y)
     else
         return false;
 }
-
+//use bool operator to check and see if a new rectangle is withing the old rectangle
 bool Rectangle2D:: contains(const Rectangle2D &r)
 {
     int xmax;
@@ -134,7 +137,7 @@ bool Rectangle2D:: contains(const Rectangle2D &r)
     else
         return false;
 }
-
+//use bool operator to see if the new rectangle is overlapping with the old rectangle
 bool Rectangle2D:: overlaps(const Rectangle2D &r)
 {
     int xmax;

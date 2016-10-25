@@ -13,6 +13,9 @@
 #include <string>
 using namespace std;
 
+
+//create class for course with pulice and private
+//most of these created via example in book
 class Course
 {
 public:
