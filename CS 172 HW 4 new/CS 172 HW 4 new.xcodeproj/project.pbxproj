@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D4CA8311DB9758D00AB8E60 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CA8301DB9758D00AB8E60 /* main.cpp */; };
+		6D4CA8391DBEF52700AB8E60 /* Rectangle2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6D4CA82D1DB9758D00AB8E60 /* CS 172 HW 4 new */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CS 172 HW 4 new"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4CA8301DB9758D00AB8E60 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle2D.cpp; sourceTree = "<group>"; };
+		6D4CA8381DBEF52700AB8E60 /* Rectangle2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rectangle2D.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6D4CA8301DB9758D00AB8E60 /* main.cpp */,
+				6D4CA8371DBEF52700AB8E60 /* Rectangle2D.cpp */,
+				6D4CA8381DBEF52700AB8E60 /* Rectangle2D.hpp */,
 			);
 			path = "CS 172 HW 4 new";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D4CA8311DB9758D00AB8E60 /* main.cpp in Sources */,
+				6D4CA8391DBEF52700AB8E60 /* Rectangle2D.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

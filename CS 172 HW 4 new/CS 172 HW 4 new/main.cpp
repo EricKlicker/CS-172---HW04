@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "Rectangle2D.hpp"
 using namespace std;
 
 
@@ -102,6 +103,7 @@ int main()
         cout << list[i];
     }
     cout << endl;
+    cout << endl;
     delete list;
     
     
@@ -122,7 +124,7 @@ int main()
     }
     
     
-    cout << SmallestElement(field, number)<< endl;
+    cout << "The smallest element in the array is: " << SmallestElement(field, number)<< endl;
     
     
     return 0;
