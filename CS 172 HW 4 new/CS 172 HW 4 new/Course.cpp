@@ -39,8 +39,14 @@ void Course::addStudent(const string& name)
 
 void Course::dropStudent(const string& name)
 {
-    
-    
+    for(int i =0; i < capacity; i++)
+        if(*(getStudents()+i)==name)
+        {
+           *(students+i) = "";
+    for (int k =0; k < numberOfStudents; k ++)
+        *(students + i) = *(students + i + 1);
+    numberOfStudents--;
+        }
 }
 
 string* Course::getStudents() const

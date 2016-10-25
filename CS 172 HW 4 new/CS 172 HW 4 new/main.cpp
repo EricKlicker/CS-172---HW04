@@ -15,6 +15,8 @@ using namespace std;
 //function for 11.3
 int* doubleCapacity(const int* list, int size)
 {
+    
+    // create a function to double size of array
     int* extrabig = new int[2*size];
     for (int i = 0; i < size; i++)
     {
@@ -25,7 +27,7 @@ int* doubleCapacity(const int* list, int size)
     }
 
     delete list;
-    return extrabig;
+    return extrabig;            //double the array size
     
 }
 
@@ -33,9 +35,10 @@ int* doubleCapacity(const int* list, int size)
 
 // Function for 11.5
 
-int SmallestElement (int* field, int number)
+int SmallestElement (int* field, int number)        //create a function to find the smallest
 {
     int smallest;
+    
      smallest = field[0];
     for (int j = 0; j< number; j++)
     {
@@ -173,9 +176,10 @@ int main()
     
     s1. dropStudent("Eric");
     
-    for (int i = 0; i < s1.getNumberOfStudents(); i++)
-        cout << *(s1.getStudents() +i) << endl;
     
+    for (int i =0; i < s1. getNumberOfStudents(); i++)
+        cout << *(s1.getStudents()+i) << endl;
+
     
     
     return 0;
