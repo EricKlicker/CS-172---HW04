@@ -166,21 +166,24 @@ int main()
     
     //11.13
     
-    Course s1("Math", 20); // use function and create course with 20 slots
+    Course course1("Math", 10);
     
-    s1.addStudent("Eric");          //create several students in the course
-    s1.addStudent("Micah");
-    s1.addStudent("Steven");
+    // Adds students to the course
+    course1.addStudent("Eric");
+    course1.addStudent("Steven");
+    course1.addStudent("Micah");
     
-    for (int i =0; i < s1. getNumberOfStudents(); i++) //output these students
-        cout  << *(s1.getStudents()+i) << endl;
+    for(int i=0; i < course1.getNumberOfStudents(); i++)
+        cout << *(course1.getStudents()+i) << endl;
+    
     cout << endl;
-    s1. dropStudent("Eric"); //implement the drop function
     
+    // Deletes a student from the class
+    course1.dropStudent("Steven");
     
-    for (int i =0; i < s1. getNumberOfStudents(); i++)
-        cout <<  *(s1.getStudents()+i) << endl;          //output the students exlcuding those who have been dropped
-    cout << endl;
+    // Displays the students in the class after one is dropped
+    for(int i=0; i < course1.getNumberOfStudents(); i++)
+        cout << *(course1.getStudents()+i) << endl;
     
     
     return 0;

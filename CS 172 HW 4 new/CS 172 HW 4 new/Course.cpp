@@ -34,23 +34,35 @@ string Course:: getCourseName() const
 //create a function to be able to add a student
 void Course::addStudent(const string& name)
 {
-    students[numberOfStudents] = name;
-    numberOfStudents++;
+    {
+        if(numberOfStudents != capacity)
+            students[numberOfStudents] = name;
+        numberOfStudents++;
+        
+        if(numberOfStudents == capacity)
+        {
+            capacity *= 2;
+            string *newList = new string[2*capacity];
+            for(int i=0; i < capacity; i++)
+                newList[i] = students[i];
+            
+            for(int i = 0; i < 2*capacity; i++)
+                newList[i] = "";
+        }
+    }
 }
-
 //create a function in which we can drop a student
 void Course::dropStudent(const string& name)
 {
-    for(int i =0; i < capacity; i++)            //make a for loop that deletes a student, then decrements the slots where the students used to be
-        if(*(getStudents()+i)==name)
-        {
-           *(students+i) = "";
-    for (int k =0; k < numberOfStudents; k ++)
-        *(students + i) = *(students + i + 1);
-    numberOfStudents--;
+    for(int i=0; i < capacity; i++)
+        if(*(getStudents()+i) == name) {
+            *(students+i) = "";
+            for(int j=0; j < numberOfStudents+1; j++)
+                *(students+i) = *(students+i+1);
+            numberOfStudents--;
         }
 }
-
+//return students
 string* Course::getStudents() const
 {
     return students;
@@ -58,9 +70,10 @@ string* Course::getStudents() const
 }
 void Course::clear()
 {
-    delete [] students;
+    for(int i=0; i < capacity; i++)
+        *(students+i)="";
+    numberOfStudents = 0;
 }
-
 int Course:: getNumberOfStudents() const
 {
     return numberOfStudents;
