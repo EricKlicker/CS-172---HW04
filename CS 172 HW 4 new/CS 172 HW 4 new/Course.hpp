@@ -26,7 +26,7 @@ public:
     void dropStudent(const string& name);
     string* getStudents() const;
     int getNumberOfStudents() const;
-    
+    void clear();
 private:
     string courseName;
     string* students;

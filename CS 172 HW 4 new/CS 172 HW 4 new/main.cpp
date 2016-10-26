@@ -128,7 +128,7 @@ int main()
     }
     
     
-    cout << "The smallest element in the array is: " << SmallestElement(field, number)<< endl;
+    cout << "The smallest element in the array is: " << SmallestElement(field, number)<< endl << endl;
     
     //call the function that determines the smallest element of the array
     
@@ -160,7 +160,7 @@ int main()
     if(r1.overlaps(r3))
         cout << "Yes" << endl;
     else
-        cout << "No" << endl;
+        cout << "No" << endl << endl;
     
     
     
@@ -169,18 +169,18 @@ int main()
     Course s1("Math", 20); // use function and create course with 20 slots
     
     s1.addStudent("Eric");          //create several students in the course
-    s1.addStudent("Steven");
     s1.addStudent("Micah");
+    s1.addStudent("Steven");
     
     for (int i =0; i < s1. getNumberOfStudents(); i++) //output these students
-        cout << *(s1.getStudents()+i) << endl;
-    
+        cout  << *(s1.getStudents()+i) << endl;
+    cout << endl;
     s1. dropStudent("Eric"); //implement the drop function
     
     
     for (int i =0; i < s1. getNumberOfStudents(); i++)
-        cout << *(s1.getStudents()+i) << endl;          //output the students exlcuding those who have been dropped
-
+        cout <<  *(s1.getStudents()+i) << endl;          //output the students exlcuding those who have been dropped
+    cout << endl;
     
     
     return 0;

@@ -56,6 +56,10 @@ string* Course::getStudents() const
     return students;
     
 }
+void Course::clear()
+{
+    delete [] students;
+}
 
 int Course:: getNumberOfStudents() const
 {
